@@ -18,7 +18,7 @@ Create new artwork for all of the in-game assets (20)
 Display the time remaining on the screen(10)
 Implement parallax scrolling(10)
 Create a new scrolling tile sprite for the background (5)
-Implement the speed inreate that happens after 30 seconds in the original game (5)
+Implement the speed increase that happens after 30 seconds in the original game (5)
 */
 let config = {
     type: Phaser.CANVAS,
