@@ -132,10 +132,10 @@ class Play extends Phaser.Scene {
 
         //after 30 seconds speed up all ships
         if (Math.round(this.clock.getElapsedSeconds()) == 30 && this.thirty == false) {
-            this.ship01.moveSpeed *= 2;
-            this.ship02.moveSpeed *= 2;
-            this.ship03.moveSpeed *= 2;
-            this.ship04.moveSpeed *= 2;
+            this.ship01.moveSpeed *= 1.5;
+            this.ship02.moveSpeed *= 1.5;
+            this.ship03.moveSpeed *= 1.5;
+            this.ship04.moveSpeed *= 1.5;
             this.thirty = true;
         }
 
