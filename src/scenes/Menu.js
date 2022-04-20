@@ -27,7 +27,6 @@ class Menu extends Phaser.Scene {
 
         //show menu text
         this.add.text(game.config.width / 2, game.config.height / 2 - borderUISize - borderPadding, 'ROCKET PATROL', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width / 2, game.config.height / 2, 'Use ←→ arrows to move & (F) to fire', menuConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
         this.add.text(game.config.width / 2, game.config.height / 2 + borderUISize + borderPadding, 'Press ← for Novice or → for Expert', menuConfig).setOrigin(0.5);
@@ -45,7 +44,7 @@ class Menu extends Phaser.Scene {
                 gameTimer: 60000
             }
             this.sound.play('sfx_select');
-            this.scene.start('playScene');
+            this.scene.start('choiceScene');
         }
         if (Phaser.Input.Keyboard.JustDown(keyRIGHT)) {
             //hard mode
@@ -54,7 +53,7 @@ class Menu extends Phaser.Scene {
                 gameTimer: 45000
             }
             this.sound.play('sfx_select');
-            this.scene.start('playScene');
+            this.scene.start('choiceScene');
         }
     }
 }
